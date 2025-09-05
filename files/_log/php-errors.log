@@ -1,0 +1,724 @@
+[2025-08-21 09:50:00] glpiphplog.WARNING: Test logger  
+[2025-08-21 09:51:58] glpiphplog.WARNING: Test logger  
+[2025-08-21 11:39:22] glpiphplog.WARNING: Test logger  
+[2025-08-21 12:18:27] glpiphplog.WARNING: Test logger  
+[2025-08-21 14:19:27] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-21 14:19:27] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 07:57:13] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 07:57:13] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 08:07:09] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 08:07:09] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 08:23:05] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 08:23:05] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 08:31:04] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 08:31:04] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 09:11:01] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 09:11:01] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 09:11:05] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 09:11:05] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 09:12:23] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 09:12:23] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 10:49:19] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 10:49:19] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:30:29] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:30:29] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:35:11] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:35:11] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:10] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:10] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:20] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:20] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:23] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:23] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:27] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:27] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:31] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:36:31] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:48:47] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:48:47] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:55:45] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:55:45] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:55:46] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:55:46] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:56:50] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:56:50] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 11:59:33] glpiphplog.WARNING:   *** PHP Warning (2): http_response_code(): Cannot set response code - headers already sent (output started at /var/lib/glpi/files/_cache/templates/47/4713aefabf6ac709f47531795c0d2391.php:102) in /var/www/html/glpi/ajax/treebrowse.php at line 76
+  Backtrace :
+  ajax/treebrowse.php:76                             http_response_code()
+  
+[2025-08-26 12:29:22] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 12:29:22] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 12:35:57] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 12:35:57] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:11:00] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:11:00] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:13:28] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:13:28] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:25:00] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:25:00] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:27:15] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:27:15] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:38:26] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:38:26] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:47:10] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 13:47:10] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 14:40:43] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 14:40:43] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 14:47:44] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 14:47:44] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 14:56:19] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 14:56:19] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 15:11:17] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 15:11:17] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 15:24:58] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 15:24:58] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 15:34:20] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 15:34:20] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 15:34:52] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-26 15:34:52] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:07:44] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:07:44] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:07:57] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:07:57] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:28:22] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:28:22] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:29:25] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:29:25] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:32:31] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:32:31] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:35:04] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:35:04] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:35:05] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:35:05] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:53:13] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 09:53:13] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 10:49:45] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 10:49:45] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 10:51:50] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 10:51:50] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 10:55:58] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 10:55:58] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 11:18:56] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 11:18:56] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 11:18:57] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 11:18:57] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 12:16:04] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 12:16:04] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 12:21:18] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 12:21:18] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 12:53:28] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 12:53:28] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 12:53:29] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 12:53:29] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:01:36] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:01:36] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:06:07] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:06:07] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:06:08] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:06:08] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:08:17] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:08:17] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:10:38] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:10:38] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:12:13] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/gridstack-grids.scss  {"user":"2@glpi-server"} 
+[2025-08-27 13:12:14] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/dashboard.scss  {"user":"2@glpi-server"} 
+[2025-08-27 13:12:15] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/chartist.scss  {"user":"2@glpi-server"} 
+[2025-08-27 13:12:15] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/auror.scss  {"user":"2@glpi-server"} 
+[2025-08-27 13:49:27] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 13:49:27] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 14:21:26] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 14:21:26] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 14:48:21] glpiphplog.CRITICAL:   *** Twig Error (Twig\Error\RuntimeError): "An exception has been thrown during the rendering of a template ("Unsupported operand types: string + string")." in template "/var/www/html/glpi/templates/components/pager.html.twig" at line 50
+  Backtrace :
+  vendor/twig/twig/src/Template.php:367              Twig\Template->displayWithErrorHandling()
+  vendor/twig/twig/src/Template.php:379              Twig\Template->display()
+  vendor/twig/twig/src/TemplateWrapper.php:38        Twig\Template->render()
+  .../twig/twig/src/Extension/CoreExtension.php:1347 Twig\TemplateWrapper->render()
+  ...tes/21/21afcaf9439d45043fa1812fdcfd586d.php:175 twig_include()
+  vendor/twig/twig/src/Template.php:394              __TwigTemplate_c82082858ace25787c35d60a404c6f20->doDisplay()
+  vendor/twig/twig/src/Template.php:367              Twig\Template->displayWithErrorHandling()
+  vendor/twig/twig/src/TemplateWrapper.php:45        Twig\Template->display()
+  src/Application/View/TemplateRenderer.php:184      Twig\TemplateWrapper->display()
+  src/Event.php:425                                  Glpi\Application\View\TemplateRenderer->display()
+  front/event.php:44                                 Glpi\Event::showList()
+  
+[2025-08-27 14:59:26] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 14:59:26] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 14:59:27] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 14:59:27] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-27 15:14:27] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/marketplace.scss  {"user":"@glpi-server"} 
+[2025-08-27 15:14:27] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/reservations.scss  {"user":"@glpi-server","mem_usage":"0.023\", 20.18Mio)"} 
+[2025-08-27 15:14:27] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/chartist.scss  {"user":"@glpi-server","mem_usage":"0.001\", 20.17Mio)"} 
+[2025-08-27 15:14:27] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/dashboard.scss  {"user":"@glpi-server","mem_usage":"0.003\", 20.21Mio)"} 
+[2025-08-27 15:14:27] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/gridstack-grids.scss  {"user":"@glpi-server","mem_usage":"0.028\", 21.79Mio)"} 
+[2025-08-27 15:14:28] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/install.scss  {"user":"@glpi-server","mem_usage":"1.222\", 38.10Mio)"} 
+[2025-08-27 15:14:31] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/teclib.scss  {"user":"@glpi-server","mem_usage":"3.544\", 46.83Mio)"} 
+[2025-08-27 15:14:34] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/lightblue.scss  {"user":"@glpi-server","mem_usage":"2.915\", 46.52Mio)"} 
+[2025-08-27 15:14:37] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/hipster.scss  {"user":"@glpi-server","mem_usage":"2.928\", 46.52Mio)"} 
+[2025-08-27 15:14:41] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/automn.scss  {"user":"@glpi-server","mem_usage":"3.479\", 46.52Mio)"} 
+[2025-08-27 15:14:44] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/midnight.scss  {"user":"@glpi-server","mem_usage":"3.531\", 46.52Mio)"} 
+[2025-08-27 15:14:48] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/auror.scss  {"user":"@glpi-server","mem_usage":"3.606\", 46.91Mio)"} 
+[2025-08-27 15:14:51] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/auror_dark.scss  {"user":"@glpi-server","mem_usage":"3.320\", 46.53Mio)"} 
+[2025-08-27 15:14:55] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/premiumred.scss  {"user":"@glpi-server","mem_usage":"4.160\", 46.91Mio)"} 
+[2025-08-27 15:14:59] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/vintage.scss  {"user":"@glpi-server","mem_usage":"3.591\", 46.52Mio)"} 
+[2025-08-27 15:15:03] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/purplehaze.scss  {"user":"@glpi-server","mem_usage":"3.593\", 46.52Mio)"} 
+[2025-08-27 15:15:06] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/classic.scss  {"user":"@glpi-server","mem_usage":"3.706\", 46.52Mio)"} 
+[2025-08-27 15:15:10] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/icecream.scss  {"user":"@glpi-server","mem_usage":"3.650\", 46.52Mio)"} 
+[2025-08-27 15:15:14] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/greenflat.scss  {"user":"@glpi-server","mem_usage":"3.651\", 46.52Mio)"} 
+[2025-08-27 15:15:17] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/flood.scss  {"user":"@glpi-server","mem_usage":"3.319\", 46.52Mio)"} 
+[2025-08-27 15:15:21] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/dark.scss  {"user":"@glpi-server","mem_usage":"3.689\", 46.52Mio)"} 
+[2025-08-27 15:15:24] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/darker.scss  {"user":"@glpi-server","mem_usage":"3.606\", 46.52Mio)"} 
+[2025-08-27 15:15:28] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/clockworkorange.scss  {"user":"@glpi-server","mem_usage":"3.743\", 46.91Mio)"} 
+[2025-08-27 15:15:31] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/aerialgreen.scss  {"user":"@glpi-server","mem_usage":"3.134\", 46.52Mio)"} 
+[2025-08-27 15:15:47] glpiphplog.WARNING: Test logger  
+[2025-08-28 06:26:45] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 06:26:45] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 06:26:46] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 06:26:46] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 07:13:32] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 07:13:32] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 07:13:32] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 07:13:32] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 07:15:13] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 07:15:13] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 07:15:43] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 07:15:43] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 07:52:04] glpiphplog.WARNING: Test logger  
+[2025-08-28 07:52:22] glpiphplog.WARNING: Test logger  
+[2025-08-28 07:53:50] glpiphplog.WARNING: Test logger  
+[2025-08-28 08:16:47] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 08:16:47] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 08:17:55] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 08:17:55] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 08:17:55] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 08:17:55] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 12:03:31] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 12:03:31] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 12:05:04] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 12:05:04] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 12:10:47] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 12:10:47] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 12:16:10] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 12:16:10] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 09:23:16] glpiphplog.WARNING: Test logger  
+[2025-08-28 09:27:40] glpiphplog.WARNING: Test logger  
+[2025-08-28 09:44:55] glpiphplog.WARNING: Test logger  
+[2025-08-28 09:59:40] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 09:59:40] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 10:55:56] glpiphplog.WARNING:   *** PHP Warning (2): Trying to access array offset on null in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 10:55:56] glpiphplog.WARNING:   *** PHP Warning (2): foreach() argument must be of type array|object, null given in /var/www/html/glpi/src/Dropdown.php at line 4235
+  Backtrace :
+  ajax/actors.php:46                                 Dropdown::getDropdownActors()
+  
+[2025-08-28 12:09:32] glpiphplog.WARNING: Test logger  
+[2025-08-29 07:49:30] glpiphplog.CRITICAL:   *** Uncaught Exception Error: Class "State_Ticket" not found in /var/lib/glpi/plugins/vendorstatus/setup.php at line 72
+  Backtrace :
+  src/Plugin.php:922                                 plugin_vendorstatus_install()
+  :                                                  Plugin->install()
+  src/Marketplace/Controller.php:546                 call_user_func()
+  src/Marketplace/Controller.php:436                 Glpi\Marketplace\Controller->setPluginState()
+  ajax/marketplace.php:83                            Glpi\Marketplace\Controller->installPlugin()
+  
+[2025-08-29 13:50:00] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/dashboard.scss  {"user":"2@glpi-server"} 
+[2025-08-29 13:50:00] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/gridstack-grids.scss  {"user":"2@glpi-server"} 
+[2025-08-29 13:50:01] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/palettes/auror.scss  {"user":"2@glpi-server"} 
+[2025-08-29 13:50:05] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/chartist.scss  {"user":"2@glpi-server"} 
+[2025-08-29 13:50:31] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6910
+Compile css/standalone/marketplace.scss  {"user":"2@glpi-server"} 
+[2025-09-01 07:37:38] glpiphplog.WARNING: Test logger  
+[2025-09-01 08:43:30] glpiphplog.WARNING: Test logger  
+[2025-09-01 08:45:26] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6946
+Compile css/standalone/dashboard.scss  {"user":"2@glpi-server"} 
+[2025-09-01 08:45:26] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6946
+Compile css/standalone/gridstack-grids.scss  {"user":"2@glpi-server"} 
+[2025-09-01 08:45:27] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6946
+Compile css/palettes/auror.scss  {"user":"2@glpi-server"} 
+[2025-09-01 08:45:30] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6946
+Compile css/standalone/chartist.scss  {"user":"2@glpi-server"} 
+[2025-09-01 08:46:32] glpiphplog.DEBUG: Html::compileScss() in /var/www/html/glpi/src/Html.php line 6946
+Compile css/standalone/marketplace.scss  {"user":"2@glpi-server"} 

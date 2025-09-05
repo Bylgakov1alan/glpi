@@ -1,0 +1,12 @@
+2025-09-01 11:44:55 [2@glpi-server]
+1 секунда for "В работе..."
+2025-09-01 11:44:55 [2@glpi-server]
+0 секунд for "Миграция данных - glpi_displaypreferences"
+2025-09-01 11:44:55 [2@glpi-server]
+0 секунд for "Изменение структуры БД - glpi_entities"
+2025-09-01 11:44:55 [2@glpi-server]
+0 секунд for "Изменение структуры БД - glpi_items_disks"
+2025-09-01 11:44:55 [2@glpi-server]
+0 секунд for "Изменение структуры БД - glpi_queuednotifications"
+2025-09-01 11:44:55 [2@glpi-server]
+0 секунд for "Задача завершена."

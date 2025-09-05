@@ -1,0 +1,24 @@
+2025-08-26 06:37:14 [2@glpi-server]
+User ID: 2 tried to access or perform an action on /front/calendar_holiday.form.php with insufficient rights. Additional information: User failed a can* method check for right 4 (CREATE) on item Type: Calendar_Holiday ID: -1
+	Stack Trace:
+		/var/www/html/glpi/src/CommonDBTM.php:3054 displayRightError()
+		/var/www/html/glpi/front/calendar_holiday.form.php:45 check()
+2025-08-26 06:43:44 [2@glpi-server]
+User ID: 2 tried to access or perform an action on /front/calendar_holiday.form.php with insufficient rights. Additional information: User failed a can* method check for right 4 (CREATE) on item Type: Calendar_Holiday ID: -1
+	Stack Trace:
+		/var/www/html/glpi/src/CommonDBTM.php:3054 displayRightError()
+		/var/www/html/glpi/front/calendar_holiday.form.php:45 check()
+2025-08-26 06:47:30 [@glpi-server]
+CSRF check failed for User ID:  at /front/login.php
+2025-08-26 07:11:19 [2@glpi-server]
+User ID: 2 tried to access or perform an action on /front/calendar_holiday.form.php with insufficient rights. Additional information: User failed a can* method check for right 4 (CREATE) on item Type: Calendar_Holiday ID: -1
+	Stack Trace:
+		/var/www/html/glpi/src/CommonDBTM.php:3054 displayRightError()
+		/var/www/html/glpi/front/calendar_holiday.form.php:45 check()
+2025-08-26 08:42:40 [2@glpi-server]
+User ID: 2 tried to access or perform an action on /front/group_user.form.php with insufficient rights. Additional information: User failed a can* method check for right 4 (CREATE) on item Type: Group_User ID: -1
+	Stack Trace:
+		/var/www/html/glpi/src/CommonDBTM.php:3054 displayRightError()
+		/var/www/html/glpi/front/group_user.form.php:49 check()
+2025-08-26 13:47:14 [2@glpi-server]
+CSRF check failed for User ID: 2 at /ajax/getDropdownValue.php

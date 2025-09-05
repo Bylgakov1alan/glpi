@@ -1,0 +1,330 @@
+2025-08-27 09:25:46 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000022] Новая заявка 123,  Ошибка: Could not instantiate mail function.
+2025-08-27 10:59:02 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000011] Заявка решена 123,  Ошибка: Could not instantiate mail function.
+2025-08-27 11:26:08 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000030] Новая заявка 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 11:57:26 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000027] Закрытие заявки 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 11:57:26 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000027] Новый комментарий по заявке 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 11:57:26 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000030] Новая заявка 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:27:05 [9@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000030] Новая заявка 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:27:05 [9@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000027] Закрытие заявки 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:27:05 [9@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000027] Новый комментарий по заявке 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:27:05 [9@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000031] Новая заявка 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:27:05 [9@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000030] Заявка решена 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:27:05 [9@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000031] Заявка решена 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:27:05 [9@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000029] Заявка решена 2222,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:27:05 [9@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000032] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000030] Новая заявка 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000027] Закрытие заявки 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000027] Новый комментарий по заявке 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000031] Новая заявка 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000030] Заявка решена 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000031] Заявка решена 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000029] Заявка решена 2222,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000032] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000033] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 12:54:18 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000033] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000030] Новая заявка 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000027] Закрытие заявки 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000027] Новый комментарий по заявке 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000031] Новая заявка 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000030] Заявка решена 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000031] Заявка решена 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000029] Заявка решена 2222,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000032] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000033] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000033] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000032] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:05:34 [@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000034] Новая заявка 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000035] Новая заявка 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000036] Новая заявка тест,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000034] Заявка решена 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000035] Заявка решена 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000036] Заявка решена тест,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000030] Новая заявка 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000030] Новая заявка 6666
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000027] Закрытие заявки 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000027] Новый комментарий по заявке 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000031] Новая заявка 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000030] Заявка решена 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000031] Заявка решена 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000029] Заявка решена 2222,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000032] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000033] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000033] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000032] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000034] Новая заявка 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 13:22:08 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000037] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000027] Закрытие заявки 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000027] Закрытие заявки 1234
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000027] Новый комментарий по заявке 1234,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000027] Новый комментарий по заявке 1234
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000031] Новая заявка 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000030] Заявка решена 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000031] Заявка решена 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000029] Заявка решена 2222,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000032] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000033] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000033] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000032] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000034] Новая заявка 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000035] Новая заявка 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000036] Новая заявка тест,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000034] Заявка решена 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000035] Заявка решена 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000036] Заявка решена тест,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000037] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000038] Новая заявка 123,  Ошибка: Could not instantiate mail function.
+2025-08-27 14:47:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000039] Новая заявка средний приоритет111111,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:37 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000031] Новая заявка 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:37 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000031] Новая заявка 1231234
+2025-08-27 15:18:37 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000030] Заявка решена 6666,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:37 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000030] Заявка решена 6666
+2025-08-27 15:18:37 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000031] Заявка решена 1231234,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:37 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000031] Заявка решена 1231234
+2025-08-27 15:18:37 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000029] Заявка решена 2222,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:37 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000029] Заявка решена 2222
+2025-08-27 15:18:37 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000032] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:37 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000032] Новая заявка 123123
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000033] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000033] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000032] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000034] Новая заявка 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000035] Новая заявка 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000036] Новая заявка тест,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000034] Заявка решена 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000035] Заявка решена 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000036] Заявка решена тест,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000037] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000038] Новая заявка 123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000039] Новая заявка средний приоритет111111,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:18:38 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000040] Новая заявка rfhfek,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000033] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000033] Новая заявка 123123
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000033] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000033] Заявка решена 123123
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000032] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000034] Новая заявка 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000035] Новая заявка 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000036] Новая заявка тест,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000034] Заявка решена 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000035] Заявка решена 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000036] Заявка решена тест,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000037] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000038] Новая заявка 123,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000039] Новая заявка средний приоритет111111,  Ошибка: Could not instantiate mail function.
+2025-08-27 15:27:33 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000040] Новая заявка rfhfek,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000032] Заявка решена 123123,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000032] Заявка решена 123123
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000034] Новая заявка 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000034] Новая заявка 123123123123
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000035] Новая заявка 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000036] Новая заявка тест,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000034] Заявка решена 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000035] Заявка решена 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000036] Заявка решена тест,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000037] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000038] Новая заявка 123,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000039] Новая заявка средний приоритет111111,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000040] Новая заявка rfhfek,  Ошибка: Could not instantiate mail function.
+2025-08-28 06:50:40 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000041] Новая заявка тестовая заявка,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000035] Новая заявка 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000035] Новая заявка 123123 олег должен добавиться
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000036] Новая заявка тест,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000036] Новая заявка тест
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000034] Заявка решена 123123123123,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000034] Заявка решена 123123123123
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000035] Заявка решена 123123 олег должен добавиться,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000035] Заявка решена 123123 олег должен добавиться
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000036] Заявка решена тест,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000036] Заявка решена тест
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000037] Новая заявка 123123,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000037] Новая заявка 123123
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000038] Новая заявка 123,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000039] Новая заявка средний приоритет111111,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000040] Новая заявка rfhfek,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000041] Новая заявка тестовая заявка,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000042] Новая заявка проверка эскалации,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000042] Заявка решена проверка эскалации,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000043] Новая заявка эскалация,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:16:31 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 5 повторениями. Сообщение: [GLPI #0000044] Новая заявка ававаава,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:30:03 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000038] Новая заявка 123,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:30:03 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000038] Новая заявка 123
+2025-08-28 07:30:03 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000039] Новая заявка средний приоритет111111,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:30:03 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000039] Новая заявка средний приоритет111111
+2025-08-28 07:30:03 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 1 повторениями. Сообщение: [GLPI #0000040] Новая заявка rfhfek,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:30:03 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000041] Новая заявка тестовая заявка,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:30:03 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000042] Новая заявка проверка эскалации,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:30:03 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000042] Заявка решена проверка эскалации,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:30:03 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000043] Новая заявка эскалация,  Ошибка: Could not instantiate mail function.
+2025-08-28 07:30:03 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 4 повторениями. Сообщение: [GLPI #0000044] Новая заявка ававаава,  Ошибка: Could not instantiate mail function.
+2025-08-28 08:03:42 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 0 повторениями. Сообщение: [GLPI #0000040] Новая заявка rfhfek,  Ошибка: Could not instantiate mail function.
+2025-08-28 08:03:42 [2@glpi-server]
+Неустранимая ошибка: отказ от доставки электронной почты к admsys@localhost: [GLPI #0000040] Новая заявка rfhfek
+2025-08-28 08:03:42 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 2 повторениями. Сообщение: [GLPI #0000041] Новая заявка тестовая заявка,  Ошибка: Could not instantiate mail function.
+2025-08-28 08:03:42 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000042] Новая заявка проверка эскалации,  Ошибка: Could not instantiate mail function.
+2025-08-28 08:03:42 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000042] Заявка решена проверка эскалации,  Ошибка: Could not instantiate mail function.
+2025-08-28 08:03:42 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000043] Новая заявка эскалация,  Ошибка: Could not instantiate mail function.
+2025-08-28 08:03:42 [2@glpi-server]
+Предупреждение: email не было доставлено admsys@localhost с оставшимися 3 повторениями. Сообщение: [GLPI #0000044] Новая заявка ававаава,  Ошибка: Could not instantiate mail function.
