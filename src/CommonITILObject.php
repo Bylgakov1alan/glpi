@@ -91,6 +91,7 @@ abstract class CommonITILObject extends CommonDBTM
     const APPROVAL      = 10; // approbation утверждение
     const TEST          = 11; // test тестирование
     const QUALIFICATION = 12; // qualification квалификация
+    const ESCALATED     = 13; // escalated to vendor (добавленный код)
 
     const NO_TIMELINE       = -1;
     const TIMELINE_NOTSET   = 0;
@@ -1155,7 +1156,7 @@ abstract class CommonITILObject extends CommonDBTM
      */
     public static function getReopenableStatusArray()
     {
-        return [self::CLOSED, self::SOLVED, self::WAITING];
+        return [self::CLOSED, self::SOLVED, self::WAITING, self::ESCALATED];
     }
 
 
@@ -4890,9 +4891,13 @@ time_to_resolve / internal_time_to_resolve
             case self::WAITING:
                 $class = 'circle';
                 break;
+            case self::ESCALATED:           //
+                $class = 'circle';
+                $solid = true;          //добавлен новый код (то как выглядит новый статус в заявках)
+                break;                      //
             case self::SOLVED:
                 $class = 'circle';
-                $solid = false;
+                $solid = true;
                 break;
             case self::CLOSED:
                 $class = 'circle';
@@ -4958,6 +4963,9 @@ time_to_resolve / internal_time_to_resolve
             case self::WAITING:
                 $key = 'waiting';
                 break;
+            case self::ESCALATED:       //
+                $key = 'escalated';       //добавлен новый статус 
+                break;                  //
             case self::SOLVED:
                 $key = 'solved';
                 break;
@@ -8072,7 +8080,8 @@ time_to_resolve / internal_time_to_resolve
     }
 
 
-
+//Возвращает общие критерии для запросов к базе данных.
+//Что делает: Формирует массив с SELECT, DISTINCT, FROM, LEFT JOIN и ORDERBY для получения данных об объектах, включая категории и организации.
     /**
      * Get common request criteria
      *
@@ -8154,6 +8163,8 @@ time_to_resolve / internal_time_to_resolve
         return $criteria;
     }
 
+//Возвращает массив запрещенных одиночных массовых действий.
+//Что делает: Запрещает действия, связанные с добавлением акторов, задач и followup'ов, если уже запрошена валидация.
     public function getForbiddenSingleMassiveActions()
     {
         $excluded = parent::getForbiddenSingleMassiveActions();
@@ -8170,6 +8181,9 @@ time_to_resolve / internal_time_to_resolve
         return $excluded;
     }
 
+
+//Возвращает критерии для поиска документов, связанных с объектом.
+//Что делает: Формирует условия для поиска документов, связанных непосредственно с объектом, его followup'ами, решениями, валидациями и задачами.
     /**
      * Returns criteria that can be used to get documents related to current instance.
      *
@@ -8282,6 +8296,8 @@ time_to_resolve / internal_time_to_resolve
         return ['OR' => $or_crits];
     }
 
+//Проверяет, является ли объект новым (статус INCOMING).
+//Что делает: Проверяет статус объекта из входных данных или полей.
     /**
      * Check if this item is new
      *
@@ -8300,6 +8316,8 @@ time_to_resolve / internal_time_to_resolve
         return $status == CommonITILObject::INCOMING;
     }
 
+//Возвращает название таблицы связанных элементов.
+//Что делает: В зависимости от типа объекта возвращает соответствующую таблицу.
     /**
      * Retrieve linked items table name
      *
@@ -8321,7 +8339,8 @@ time_to_resolve / internal_time_to_resolve
         }
     }
 
-
+//Возвращает массив связанных элементов.
+//Что делает: Выполняет запрос к базе данных для получения связанных элементов и группирует их по типу.
     public function getLinkedItems(): array
     {
         /** @var \DBmysql $DB */
@@ -8347,6 +8366,8 @@ time_to_resolve / internal_time_to_resolve
         return $tab;
     }
 
+//Проверяет, нужно ли отображать вкладку "Impact".
+//Что делает: Проверяет, есть ли связанные элементы, для которых включена функциональность Impact.
     /**
      * Should impact tab be displayed? Check if there is a valid linked item
      *
@@ -8363,6 +8384,8 @@ time_to_resolve / internal_time_to_resolve
         return false;
     }
 
+//Возвращает критерии для поиска открытых объектов.
+//Что делает: Формирует условие для статусов, которые не являются решенными или закрытыми.
     /**
      * Get criteria needed to match objets with an "open" status (= not resolved
      * or closed)
@@ -8383,6 +8406,8 @@ time_to_resolve / internal_time_to_resolve
         ];
     }
 
+//Обрабатывает входные данные related items.
+//Что делает: Добавляет связи с элементами, указанными в items_id.
     public function handleItemsIdInput(): void
     {
         if (!empty($this->input['items_id'])) {
@@ -8401,7 +8426,12 @@ time_to_resolve / internal_time_to_resolve
         }
     }
 
+//Возвращает класс для связи элементов с объектом (абстрактный метод).
     abstract public static function getItemLinkClass(): string;
+
+
+//Обрабатывает входные данные шаблонов задач.
+//Что делает: Добавляет задачи из шаблонов, указанных в _tasktemplates_id.
     /**
      * Handle "_tasktemplates_id" special input
      */
@@ -8429,6 +8459,8 @@ time_to_resolve / internal_time_to_resolve
         }
     }
 
+// Обрабатывает входные данные шаблонов followup'ов.
+//Что делает: Добавляет followup'ы из шаблонов, указанных в _itilfollowuptemplates_id
     /**
      * Handle "_itilfollowuptemplates_id" special input
      */
@@ -8456,6 +8488,8 @@ time_to_resolve / internal_time_to_resolve
         }
     }
 
+//Обрабатывает входные данные шаблонов решений.
+//Что делает: Добавляет решение из шаблона, указанного в _solutiontemplates_id.
     /**
      * Handle "_solutiontemplates_id" special input
      */
@@ -8478,6 +8512,8 @@ time_to_resolve / internal_time_to_resolve
         $solution->add($input);
     }
 
+//Обрабатывает уведомления после создания объекта.
+//Что делает: Отправляет уведомления о новом, решенном или закрытом объекте, если не отключено.
     /**
      * Handle notifications to be sent after item creation.
      *
@@ -8503,6 +8539,8 @@ time_to_resolve / internal_time_to_resolve
         }
     }
 
+//Управляет добавлением валидаций.
+//Что делает: Обрабатывает входные данные для отправки запросов валидации соответствующим пользователям или группам.
     /**
      * Manage Validation add from input (form and rules)
      *
@@ -8704,6 +8742,8 @@ time_to_resolve / internal_time_to_resolve
         return true;
     }
 
+//Обновляет акторов объекта.
+//Что делает: Сравнивает старых и новых акторов, добавляет, обновляет или удаляет их.
     /**
      * Manage actors posted by itil form
      * New way to do it with a general array containing all item actors.
@@ -9026,7 +9066,8 @@ time_to_resolve / internal_time_to_resolve
         $this->clearLazyLoadedActors();
     }
 
-
+//Возвращает объект актора по типу элемента.
+//Что делает: В зависимости от типа элемента возвращает соответствующий класс-связку.
     protected function getActorObjectForItem(string $itemtype = ""): CommonITILActor
     {
         switch ($itemtype) {
@@ -9046,7 +9087,8 @@ time_to_resolve / internal_time_to_resolve
         return $actor;
     }
 
-
+//Устанавливает техника и группу из категории.
+//Что делает: Если не указаны исполнители, берет их из категории.
     /**
      * Fill the tech and the group from the category
      * @param array $input
@@ -9073,7 +9115,8 @@ time_to_resolve / internal_time_to_resolve
         return $input;
     }
 
-
+//Устанавливает техника и группу из оборудования.
+//Что делает: Если не указаны исполнители, берет их из связанного оборудования.
     /**
      * Fill the tech and the group from the hardware
      * @param array $input
@@ -9098,6 +9141,8 @@ time_to_resolve / internal_time_to_resolve
         return $input;
     }
 
+//Назначает объект (устаревший метод).
+//Что делает: Устанавливает статус ASSIGNED, если есть исполнители и объект в новом статусе.
     /**
      * Replay setting auto assign if set in rules engine or by auto_assign_mode
      * Do not force status if status has been set by rules
@@ -9128,6 +9173,8 @@ time_to_resolve / internal_time_to_resolve
         return $input;
     }
 
+//Проверяет наличие валидного актора во входных данных.
+//Что делает: Проверяет, что актор имеет валидный ID или email.
     /**
      * Check if input contains a valid actor for given itemtype / actortype.
      *
@@ -9224,12 +9271,15 @@ time_to_resolve / internal_time_to_resolve
         return $has_valid_actor;
     }
 
+//Возвращает класс параметров шаблонов содержимого (абстрактный метод).
     /**
      * Parameter class to be use for this item (user templates)
      * @return string class name
      */
     abstract public static function getContentTemplatesParametersClass(): string;
 
+//Возвращает данные для отображения на канбан-доске.
+//Что делает: Формирует массив с информацией об объектах, включая команду и связанные тикеты.
     public static function getDataToDisplayOnKanban($ID, $criteria = [])
     {
         /**
@@ -9501,6 +9551,8 @@ time_to_resolve / internal_time_to_resolve
         return $items;
     }
 
+//Возвращает колонки для канбан-доски.
+//Что делает: Формирует массив колонок с карточками объектов.
     public static function getKanbanColumns($ID, $column_field = null, $column_ids = [], $get_default = false)
     {
         if (!in_array($column_field, ['status'])) {
@@ -9680,6 +9732,8 @@ time_to_resolve / internal_time_to_resolve
         return $columns;
     }
 
+//Отображает канбан-доску.
+//Что делает: Выводит HTML-код канбан-доски с использованием шаблонизатора.
     public static function showKanban($ID)
     {
         $itilitem = new static();
@@ -9778,6 +9832,8 @@ time_to_resolve / internal_time_to_resolve
         ]);
     }
 
+//Возвращает все объекты для канбан-доски.
+//Что делает: Возвращает массив с глобальным представлением.
     public static function getAllForKanban($active = true, $current_id = -1)
     {
        // ITIL items only have a global view
@@ -9787,6 +9843,8 @@ time_to_resolve / internal_time_to_resolve
         return $items;
     }
 
+//Возвращает все колонки для канбан-доски.
+//Что делает: Формирует массив колонок на основе статусов.
     public static function getAllKanbanColumns($column_field = null, $column_ids = [], $get_default = false)
     {
 
@@ -9810,6 +9868,9 @@ time_to_resolve / internal_time_to_resolve
         return $columns[$column_field];
     }
 
+
+//Возвращает роли команды.
+//Что делает: Возвращает массив констант ролей.
     public static function getTeamRoles(): array
     {
         return [
@@ -9819,6 +9880,8 @@ time_to_resolve / internal_time_to_resolve
         ];
     }
 
+//Возвращает название роли команды.
+//Что делает: Возвращает локализованное название роли.
     public static function getTeamRoleName(int $role, int $nb = 1): string
     {
         switch ($role) {
@@ -9832,11 +9895,15 @@ time_to_resolve / internal_time_to_resolve
         return '';
     }
 
+//Возвращает типы элементов команды.
+//Что делает: Возвращает массив с типами: User, Group, Supplier.
     public static function getTeamItemtypes(): array
     {
         return ['User', 'Group', 'Supplier'];
     }
 
+//Добавляет участника команды.
+//Что делает: Добавляет связь с указанным элементом и ролью.
     public function addTeamMember(string $itemtype, int $items_id, array $params = []): bool
     {
         if (
@@ -9876,6 +9943,8 @@ time_to_resolve / internal_time_to_resolve
         return (bool) $result;
     }
 
+//Удаляет участника команды.
+//Что делает: Удаляет связь с указанным элементом и ролью.
     public function deleteTeamMember(string $itemtype, int $items_id, array $params = []): bool
     {
         $role = $params['role'] ?? CommonITILActor::ASSIGN;
@@ -9908,6 +9977,8 @@ time_to_resolve / internal_time_to_resolve
         return (bool) $result;
     }
 
+//Возвращает команду объекта.
+//Что делает: Формирует массив с информацией об участниках команды.
     public function getTeam(): array
     {
         /** @var \DBmysql $DB */
@@ -9984,6 +10055,8 @@ time_to_resolve / internal_time_to_resolve
         return $team;
     }
 
+//Возвращает статистику временной шкалы.
+//Что делает: Вычисляет общую длительность задач и процент выполнения.
     public function getTimelineStats(): array
     {
         /** @var \DBmysql $DB */
@@ -10028,6 +10101,8 @@ time_to_resolve / internal_time_to_resolve
         return $stats;
     }
 
+//Возвращает экземпляр класса валидации.
+//Что делает: Возвращает объект класса валидации, если он существует.
     /**
      * Returns an instance of validation class, if it exists.
      *
@@ -10042,6 +10117,8 @@ time_to_resolve / internal_time_to_resolve
         return null;
     }
 
+//Возвращает название вкладки браузера.
+//Что делает: Форматирует название в виде "Тип (#ID) - Название".
     /**
      * Instead of "{itemtype} - {name}" we will use {itemtype} ({id}) - {name}
      * as the ID of a Ticket/Change/Problem is an important information
@@ -10058,6 +10135,8 @@ time_to_resolve / internal_time_to_resolve
         );
     }
 
+//Преобразует входные данные акторов из нового формата в старый.
+//Что делает: Конвертирует данные из _actors в отдельные поля _users_id_requester и т.д.
     /**
      * Transfer "_actors" input (introduced in 10.0.0) into historical input keys.
      *
@@ -10186,18 +10265,24 @@ time_to_resolve / internal_time_to_resolve
         return $input;
     }
 
+//Подготавливает входные данные для клонирования.
+//Что делает: Удаляет поле actiontime.
     public function prepareInputForClone($input)
     {
         unset($input['actiontime']);
         return $input;
     }
 
+//Возвращает эталонное событие для сообщений.
+//Что делает: Для всех действий возвращает событие 'new'.
     public static function getMessageReferenceEvent(string $event): ?string
     {
         // All actions should be attached to thread instanciated by `new` event
         return 'new';
     }
 
+//Проверяет право на обновление объекта.
+//Что делает: Проверяет права на уровне объекта и организации.
     /**
      * Is the current user have right to update the current ITIL object ?
      *
@@ -10212,6 +10297,8 @@ time_to_resolve / internal_time_to_resolve
         return self::canUpdate();
     }
 
+// Проверяет право на удаление объекта.
+//Что делает: Проверяет права на уровне объекта и организации.
     public function canDeleteItem()
     {
 
@@ -10221,6 +10308,8 @@ time_to_resolve / internal_time_to_resolve
         return self::canDelete();
     }
 
+//Возвращает HTML-код формы управления командой.
+//Что делает: Использует шаблон для отображения формы управления акторами.
     public static function getTeamMemberForm(CommonITILObject $item): string
     {
         $itiltemplate = $item->getITILTemplateToUse(

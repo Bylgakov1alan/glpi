@@ -10,7 +10,7 @@ use Glpi\RichText\RichText;
 use Glpi\Toolbox\Sanitizer;
 
 
-// создаем новый клас который наследует все функции и возможности CommonITIObbject
+// создаем новый клас который наследует все функции и возможности CommonITIObbject 
 class Ticket extends CommonITILObject
 {
    // From CommonDBTM
@@ -2782,22 +2782,22 @@ class Ticket extends CommonITILObject
                 echo Html::hidden("_render_twig", ['value' => true]);
 
                 $JS = <<<JAVASCRIPT
-               function solutiontemplate_update{$rand}(value) {
-                  $.ajax({
-                     url: '{$CFG_GLPI['root_doc']}/ajax/solution.php',
-                     type: 'POST',
-                     data: {
-                        solutiontemplates_id: value
-                     }
-                  }).done(function(data) {
-                     setRichTextEditorContent("{$content_id}", data.content);
+                    function solutiontemplate_update{$rand}(value) {
+                        $.ajax({
+                            url: '{$CFG_GLPI['root_doc']}/ajax/solution.php',
+                            type: 'POST',
+                            data: {
+                                solutiontemplates_id: value
+                            }
+                        }).done(function(data) {
+                            setRichTextEditorContent("{$content_id}", data.content);
 
-                     var solutiontypes_id = isNaN(parseInt(data.solutiontypes_id))
-                        ? 0
-                        : parseInt(data.solutiontypes_id);
-                     $("#dropdown_solutiontypes_id{$rand}").trigger("setValue", solutiontypes_id);
-                  });
-               }
+                            var solutiontypes_id = isNaN(parseInt(data.solutiontypes_id))
+                                ? 0
+                                : parseInt(data.solutiontypes_id);
+                            $("#dropdown_solutiontypes_id{$rand}").trigger("setValue", solutiontypes_id);
+                        });
+                    }
                 JAVASCRIPT;
 
 
@@ -3823,12 +3823,14 @@ class Ticket extends CommonITILObject
     {
         //// Базовые статусы тикетов
        // To be overridden by class
-        $tab = [self::INCOMING => _x('status', 'New'),
+        $tab = [
+            self::INCOMING => _x('status', 'New'),
             self::ASSIGNED => _x('status', 'Processing (assigned)'),
             self::PLANNED  => _x('status', 'Processing (planned)'),
             self::WAITING  => __('Pending'),
             self::SOLVED   => _x('status', 'Solved'),
-            self::CLOSED   => _x('status', 'Closed')
+            self::CLOSED   => _x('status', 'Closed'),
+            self::ESCALATED => __('Escalated to Vendor') // добавленно для работы статуса эскалированно на вендера
         ];
         //// Добавляем мета-статусы для поиска если требуется
         if ($withmetaforsearch) {
