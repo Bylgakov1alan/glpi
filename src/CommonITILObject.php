@@ -1147,6 +1147,7 @@ abstract class CommonITILObject extends CommonDBTM
     }
 
 
+    // функция уже готовая работает она для того что бы была возможность пересоздать заявку с этими статусам
     /**
      * Get the ITIL object closed, solved or waiting status list
      *
@@ -2161,7 +2162,7 @@ abstract class CommonITILObject extends CommonDBTM
        // If status changed from pending to anything else, remove pending reason
         if (
             isset($this->input["status"])
-            && $this->input["status"] != self::WAITING
+            && $this->input["status"] != self::WAITING 
         ) {
             PendingReason_Item::deleteForItem($this);
         }
@@ -2939,7 +2940,8 @@ abstract class CommonITILObject extends CommonDBTM
         }
 
         // Set begin waiting time if status is waiting
-        if ($input["status"] == self::WAITING) {
+        if (in_array($input["status"], [self::ESCALATED, self::WAITING])
+            )    {
             $input['begin_waiting_date'] = $input['date'];
         }
 
@@ -4816,27 +4818,27 @@ time_to_resolve / internal_time_to_resolve
         switch ($type) {
             case 'internal_time_to_own':
             case 'time_to_own':
-                return 'IF(' . $DB->quoteName($table . '.' . $type) . ' IS NOT NULL
-            AND ' . $DB->quoteName($table . '.status') . ' <> ' . self::WAITING . '
-            AND ((' . $DB->quoteName($table . '.takeintoaccountdate') . ' IS NOT NULL AND
-                 ' . $DB->quoteName($table . '.takeintoaccountdate') . ' > ' . $DB->quoteName($table . '.' . $type) . ')
-                 OR (' . $DB->quoteName($table . '.takeintoaccountdate') . ' IS NULL AND
-                 ' . $DB->quoteName($table . '.takeintoaccount_delay_stat') . '
-                        > TIMESTAMPDIFF(SECOND,
-                                        ' . $DB->quoteName($table . '.date') . ',
-                                        ' . $DB->quoteName($table . '.' . $type) . '))
-                 OR (' . $DB->quoteName($table . '.takeintoaccount_delay_stat') . ' = 0
-                      AND ' . $DB->quoteName($table . '.' . $type) . ' < NOW())),
-            1, 0)';
+                return 'IF(' 
+                            . $DB->quoteName($table . '.' . $type) . ' IS NOT NULL 
+                    AND '   . $DB->quoteName($table . '.status') . ' NOT IN (' . self::WAITING . ',' . self::ESCALATED . ') 
+                    AND (('             . $DB->quoteName($table . '.takeintoaccountdate') . ' IS NOT NULL 
+                                AND '   . $DB->quoteName($table . '.takeintoaccountdate') . ' > ' . $DB->quoteName($table . '.' . $type) . ') 
+                            OR ('       . $DB->quoteName($table . '.takeintoaccountdate') . ' IS NULL 
+                                AND '   . $DB->quoteName($table . '.takeintoaccount_delay_stat') . ' > TIMESTAMPDIFF(SECOND,' 
+                                        . $DB->quoteName($table . '.date') . ',' . $DB->quoteName($table . '.' . $type) . ')) 
+                            OR ('       . $DB->quoteName($table . '.takeintoaccount_delay_stat') . ' = 0 
+                                AND '   . $DB->quoteName($table . '.' . $type) . ' < NOW())), 
+                    1, 0)';
             break;
 
             case 'internal_time_to_resolve':
             case 'time_to_resolve':
-                return 'IF(' . $DB->quoteName($table . '.' . $type) . ' IS NOT NULL
-            AND ' . $DB->quoteName($table . '.status') . ' <> ' . self::WAITING . '
-            AND (' . $DB->quoteName($table . '.solvedate') . ' > ' . $DB->quoteName($table . '.' . $type) . '
-                  OR (' . $DB->quoteName($table . '.solvedate') . ' IS NULL
-                     AND ' . $DB->quoteName($table . '.' . $type) . ' < NOW())),
+                return 'IF(' 
+                    . $DB->quoteName($table . '.' . $type) . ' IS NOT NULL 
+            AND '   . $DB->quoteName($table . '.status') . ' NOT IN (' . self::WAITING . ',' . self::ESCALATED . ') 
+            AND ('  . $DB->quoteName($table . '.solvedate') . ' > ' . $DB->quoteName($table . '.' . $type) . '
+                  OR ('     . $DB->quoteName($table . '.solvedate') . ' IS NULL 
+                     AND '  . $DB->quoteName($table . '.' . $type) . ' < NOW())), 
             1, 0)';
             break;
         }
