@@ -31,7 +31,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
  * ---------------------------------------------------------------------
- */
+ */ 
 
 namespace Glpi\Dashboard;
 
@@ -165,8 +165,7 @@ class Provider
             $params = array_merge($default_params, $params);
 
             return self::nbTicketsGeneric('escalated', $params);
-        }
-        }
+        }   
 
     /**
      * @method array bigNumberItem(CommonDBTM $item, array $params = [])
