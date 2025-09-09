@@ -91,7 +91,7 @@ abstract class CommonITILObject extends CommonDBTM
     const APPROVAL      = 10; // approbation утверждение
     const TEST          = 11; // test тестирование
     const QUALIFICATION = 12; // qualification квалификация
-    const ESCALATED     = 13; // escalated to vendor (добавленный код) 
+    const ESCALATED     = 15; // escalated to vendor (добавленный код) 
 
     const NO_TIMELINE       = -1;
     const TIMELINE_NOTSET   = 0;

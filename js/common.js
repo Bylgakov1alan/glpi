@@ -949,6 +949,9 @@ var templateItilStatus = function(option) {
         case 14 :
             classes = 'canceled fas fa-ban';
             break;
+        case 15 :
+            classes = 'waiting fas fa-circle';
+            break;
     }
 
     return $(`<span><i class="itilstatus ${classes}"></i> ${option.text}</span>`);

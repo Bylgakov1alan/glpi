@@ -33304,7 +33304,7 @@ body .flatpickr-time input:hover, body .flatpickr-time .flatpickr-am-pm:hover, b
 }
 .kanban .kanban-color-preview.itilstatus.test, .kanban .kanban-color-preview.itilstatus.qualif, .kanban .kanban-color-preview.itilstatus.waiting, .kanban .kanban-column-title.itilstatus.test, .kanban .kanban-column-title.itilstatus.qualif, .kanban .kanban-column-title.itilstatus.waiting {
   background-color: orange;
-  color: #1b1200;
+  color: orange;
 }
 .kanban .kanban-color-preview.itilstatus.approval, .kanban .kanban-column-title.itilstatus.approval {
   background-color: #8cabdb;

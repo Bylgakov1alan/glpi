@@ -414,9 +414,10 @@
 
             &.test,
             &.qualif,
-            &.waiting {
+            &.waiting 
+            &.escalated {
                 background-color: orange;
-                color: rgb(27, 18, 0);
+                color: orange;
             }
 
             &.approval {

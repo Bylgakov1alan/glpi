@@ -3828,9 +3828,9 @@ class Ticket extends CommonITILObject
             self::ASSIGNED => _x('status', 'Processing (assigned)'),
             self::PLANNED  => _x('status', 'Processing (planned)'),
             self::WAITING  => __('Pending'),
+            self::ESCALATED => __('Escalated to Vendor'), // добавленно для работы статуса эскалированно на вендера
             self::SOLVED   => _x('status', 'Solved'),
-            self::CLOSED   => _x('status', 'Closed'),
-            self::ESCALATED => __('Escalated to Vendor') // добавленно для работы статуса эскалированно на вендера
+            self::CLOSED   => _x('status', 'Closed')
         ];
         //// Добавляем мета-статусы для поиска если требуется
         if ($withmetaforsearch) {
