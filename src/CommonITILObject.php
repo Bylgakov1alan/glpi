@@ -2162,7 +2162,7 @@ abstract class CommonITILObject extends CommonDBTM
        // If status changed from pending to anything else, remove pending reason
         if (
             isset($this->input["status"])
-            && $this->input["status"] != self::WAITING 
+            && !in_array($this->input["status"], [self::WAITING, self::ESCALATED])
         ) {
             PendingReason_Item::deleteForItem($this);
         }
@@ -2392,7 +2392,7 @@ abstract class CommonITILObject extends CommonDBTM
             !is_null($this->fields['begin_waiting_date'])
             && ($key = array_search('status', $this->updates)) !== false
             && (
-            $this->oldvalues['status'] == self::WAITING
+            in_array($this->oldvalues['status'], [self::WAITING, self::ESCALATED])
             // From solved to another state than closed
             || (
                in_array($this->oldvalues["status"], $this->getSolvedStatusArray())
@@ -2534,7 +2534,7 @@ abstract class CommonITILObject extends CommonDBTM
        // Set begin waiting date if needed
         if (
             (($key = array_search('status', $this->updates)) !== false)
-            && (($this->fields['status'] == self::WAITING)
+            && (in_array($this->fields['status'], [self::WAITING, self::ESCALATED])
               || in_array($this->fields["status"], $this->getSolvedStatusArray()))
         ) {
             $this->updates[]                    = "begin_waiting_date";
