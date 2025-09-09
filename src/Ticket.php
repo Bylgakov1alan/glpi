@@ -4547,7 +4547,7 @@ class Ticket extends CommonITILObject
                 $WHERE = array_merge(
                     $WHERE,
                     $search_assign,
-                    ['glpi_tickets.status' => self::WAITING]
+                    ['glpi_tickets.status' => [self::WAITING, self::ESCALATED]]
                 );
                 break;
 
@@ -4642,7 +4642,8 @@ class Ticket extends CommonITILObject
                             self::INCOMING,
                             self::PLANNED,
                             self::ASSIGNED,
-                            self::WAITING
+                            self::WAITING,
+                            self::ESCALATED
                         ],
                         'NOT'                   => [
                             $search_assign,
@@ -4702,7 +4703,8 @@ class Ticket extends CommonITILObject
                             self::INCOMING,
                             self::PLANNED,
                             self::ASSIGNED,
-                            self::WAITING
+                            self::WAITING,
+                            self::ESCALATED
                         ],
                         'NOT' => $search_assign
                     ]
@@ -4766,7 +4768,7 @@ class Ticket extends CommonITILObject
                     case "waiting":
                         $options['criteria'][0]['field']      = 12; // status
                         $options['criteria'][0]['searchtype'] = 'equals';
-                        $options['criteria'][0]['value']      = self::WAITING;
+                        $options['criteria'][0]['value']      = [self::WAITING, self::ESCALATED];
                         $options['criteria'][0]['link']       = 'AND';
 
                         $options['criteria'][1]['field']      = 8; // groups_id_assign
@@ -4848,7 +4850,7 @@ class Ticket extends CommonITILObject
                     case "waiting":
                         $options['criteria'][0]['field']      = 12; // status
                         $options['criteria'][0]['searchtype'] = 'equals';
-                        $options['criteria'][0]['value']      = self::WAITING;
+                        $options['criteria'][0]['value']      = [self::WAITING, self::ESCALATED];
                         $options['criteria'][0]['link']       = 'AND';
 
                         $options['criteria'][1]['field']      = 5; // users_id_assign
@@ -5922,7 +5924,8 @@ class Ticket extends CommonITILObject
                         self::INCOMING,
                         self::ASSIGNED,
                         self::PLANNED,
-                        self::WAITING
+                        self::WAITING,
+                        self::ESCALATED
                     ],
                     'closedate'    => null,
                     new QueryExpression("ADDDATE(" . $DB->quoteName('date') . ", INTERVAL $value DAY) < NOW()")
