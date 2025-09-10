@@ -6538,7 +6538,7 @@ JAVASCRIPT;
                 $solve_date = $data[$NAME][0]['solvedate'];
 
                 $is_late = !empty($value)
-                    && $status != CommonITILObject::WAITING
+                    && !in_array($status, [CommonITILObject::WAITING, CommonITILObject::ESCALATED])
                     && (
                         $solve_date > $value
                         || ($solve_date == null && $value < $_SESSION['glpi_currenttime'])
