@@ -33,6 +33,7 @@
  * ---------------------------------------------------------------------
  */
 
+use Glpi\Agent\Communication\Headers\Common;
 use Glpi\Toolbox\Sanitizer;
 
 /**
@@ -109,7 +110,7 @@ class PendingReasonCron extends CommonDBTM
                 continue;
             }
 
-            if ($item->fields['status'] != CommonITILObject::WAITING) {
+            if (!in_array($item->fields['status'], [CommonITILObject::WAITING, CommonITILObject::ESCALATED])) {
                 $pending_item->delete([
                     'id' => $pending_item->fields['id'],
                 ]);

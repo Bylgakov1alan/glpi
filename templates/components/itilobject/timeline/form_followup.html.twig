@@ -217,8 +217,8 @@
             {# Fixed min-height ensure no height increase when toggling the pending reason button, as select 2 dropdown are a bit higher than the default footer height #}
             <div class="d-flex card-footer mx-n3 mb-n3 flex-wrap" style="row-gap: 10px; min-height: 79px">
                {% set pending_reasons %}
-                  {% set show_pending_reasons_actions = item.fields['status'] == constant('CommonITILObject::WAITING') and not add_reopen %}
-                  {% if get_current_interface() == 'central' and item.isAllowedStatus(item.fields['status'], constant('CommonITILObject::WAITING')) and call('PendingReason_Item::canDisplayPendingReasonForItem', [subitem]) %}
+                  {% set show_pending_reasons_actions = item.fields['status'] in [constant('CommonITILObject::WAITING'), constant('CommonITILObject::ESCALATED')] and not add_reopen %}
+                  {% if get_current_interface() == 'central' and (item.isAllowedStatus(item.fields['status'], constant('CommonITILObject::WAITING')) or item.isAllowedStatus(item.fields['status'], constant('CommonITILObject::ESCALATED'))) and call('PendingReason_Item::canDisplayPendingReasonForItem', [subitem]) %}
                      <span
                         class="input-group-text bg-yellow-lt py-0 pe-0 {{ show_pending_reasons_actions ? 'flex-fill' : '' }}"
                         id="pending-reasons-control-{{ rand }}"
@@ -231,7 +231,7 @@
                               <input type="checkbox" name="pending" value="1" class="form-check-input"
                                     id="enable-pending-reasons-{{ rand }}"
                                     role="button"
-                                    {{ item.fields['status'] == constant('CommonITILObject::WAITING') and not add_reopen ? 'checked' : '' }}
+                                    {{ item.fields['status'] in [constant('CommonITILObject::WAITING'), constant('CommonITILObject::ESCALATED')] and not add_reopen ? 'checked' : '' }}
                                     data-bs-toggle="collapse" data-bs-target="#pending-reasons-setup-{{ rand }}" />
                            </label>
                         </span>

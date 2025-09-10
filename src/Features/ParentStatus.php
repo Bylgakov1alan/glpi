@@ -94,17 +94,23 @@ trait ParentStatus
         if (isset($input['pending'])) {
             // Pending toggle was explicitly enabled or disabled
             if ($input['pending']) {
-                $input['_status'] = CommonITILObject::WAITING;
+                // Keep current status if it's already a waiting status, otherwise set to WAITING
+                $current_status = $parentitem->fields['status'];
+                if (in_array($current_status, [CommonITILObject::WAITING, CommonITILObject::ESCALATED])) {
+                    $input['_status'] = $current_status;
+                } else {
+                    $input['_status'] = CommonITILObject::WAITING;
+                }
             } else {
                 $input["_reopen"] = true;
+                }
+            } else {
+                // Pending toggle isn't set (self-service, API, ...)
+                // Try to compute whether or not we need te reopen the ticket
+                if (!isset($input['_no_reopen']) && $parentitem->needReopen()) {
+                    $input["_reopen"] = true;
+                }
             }
-        } else {
-            // Pending toggle isn't set (self-service, API, ...)
-            // Try to compute whether or not we need te reopen the ticket
-            if (!isset($input['_no_reopen']) && $parentitem->needReopen()) {
-                $input["_reopen"] = true;
-            }
-        }
 
        //manage reopening of ITILObject
         $reopened = false;

@@ -3433,6 +3433,27 @@ class TicketTest extends DbTestCase
                 ],
                 'expected' => \CommonITILObject::WAITING, // status not changed as not "new"
             ],
+            [
+                'input'    => [
+                    '_users_id_assign' => ['4'], // "tech"
+                    'status' => \CommonITILObject::ESCALATED, // Ваш новый статус
+                ],
+                'expected' => \CommonITILObject::ESCALATED, // статус не должен меняться
+            ],
+            [
+                'input'    => [
+                    '_groups_id_assign' => $group_id,
+                    'status' => \CommonITILObject::ESCALATED,
+                ],
+                'expected' => \CommonITILObject::ESCALATED,
+            ],
+            [
+                'input'    => [
+                    '_suppliers_id_assign' => '1', // "_suplier01_name"
+                    'status' => \CommonITILObject::ESCALATED,
+                ],
+                'expected' => \CommonITILObject::ESCALATED,
+            ],
         ];
     }
 

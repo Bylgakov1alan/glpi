@@ -1,5 +1,7 @@
 <?php
 
+use Glpi\Agent\Communication\Headers\Common;
+
 /**
  * ---------------------------------------------------------------------
  *
@@ -453,7 +455,7 @@ class PendingReason_Item extends CommonDBRelation
                     self::updateForItem($timeline_item, $pending_updates);
 
                     if (
-                        $timeline_item->input['_job']->fields['status'] == CommonITILObject::WAITING
+                        in_array($timeline_item->input['_job']->fields['status'], [CommonITILObject::WAITING, CommonITILObject::ESCALATED])
                         && self::isLastPendingForItem($timeline_item->input['_job'], $timeline_item)
                     ) {
                       // Update parent if needed
@@ -462,7 +464,7 @@ class PendingReason_Item extends CommonDBRelation
                 }
             } else if (!$timeline_item->input['pending'] ?? 1) {
                // Change status of parent if needed
-                if ($timeline_item->input["_job"]->fields['status'] == CommonITILObject::WAITING) {
+                if (in_array($timeline_item->input['_job']->fields['status'], [CommonITILObject::WAITING, CommonITILObject::ESCALATED])) {
                     // get previous stored status for parent
                     if ($parent_pending = self::getForItem($timeline_item->input["_job"])) {
                         $timeline_item->input['_status'] = $parent_pending->fields['previous_status'] ?? CommonITILObject::ASSIGNED;
@@ -481,7 +483,15 @@ class PendingReason_Item extends CommonDBRelation
                 && $timeline_item->input['pendingreasons_id'] > 0
             ) {
                // Set parent status
-                $timeline_item->input['_status'] = CommonITILObject::WAITING;
+                // Set parent status - keep current status if it's already a waiting status
+                $current_status = $timeline_item->input["_job"]->fields['status'];
+                if (in_array($current_status, [CommonITILObject::WAITING, CommonITILObject::ESCALATED])) {
+                    // If already in a waiting status, keep it
+                    $timeline_item->input['_status'] = $current_status;
+                } else {
+                    // Otherwise set to default waiting status
+                    $timeline_item->input['_status'] = CommonITILObject::WAITING;
+                }
 
                // Create pending_item data for event and parent
                 self::createForItem($timeline_item->input["_job"], [

@@ -6565,7 +6565,7 @@ JAVASCRIPT;
                 }
 
                 $is_late = !empty($value)
-                    && $status != CommonITILObject::WAITING
+                    && !in_array($status, [CommonITILObject::WAITING, CommonITILObject::ESCALATED])
                     && (
                         $tia_date > $value
                         || ($tia_date == null && $value < $_SESSION['glpi_currenttime'])
@@ -7106,7 +7106,7 @@ JAVASCRIPT;
                         $out = Html::convDateTime($data[$ID][0]['name']);
 
                        // No due date in waiting status
-                        if ($data[$ID][0]['status'] == CommonITILObject::WAITING) {
+                        if ( in_array($$data[$ID][0]['status'], [CommonITILObject::WAITING, CommonITILObject::ESCALATED])) {
                              return '';
                         }
                         if (empty($data[$ID][0]['name'])) {

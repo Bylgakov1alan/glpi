@@ -628,6 +628,7 @@ class SLMTest extends DbTestCase
         $_SESSION['glpi_currenttime'] = $currenttime_bak;
         $this->assertTrue($updated);
         $this->assertEquals($tomorrow_2pm, $ticket->fields['internal_time_to_resolve']);
+        //тут нужно будет добавить тест пока еще тут все пусто 
     }
 
     /**
