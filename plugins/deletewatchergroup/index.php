@@ -1,13 +1,5 @@
 <?php
-/** 
- * Название плагина Vendor Status
- * Версия плагина 1.0.0
- * Лицензия ?
- * базовая защита плагина которая определяет был палгин запущен из glpi или пытаются получить доступ как то еще
- * если доступ не из glpi то выдается ошибка
- */
-
 if (!defined('GLPI_ROOT')) {
-    die("Sorry. You can't access this file derectly");
+    die("Sorry. You can't access this file directly");
 }
 ?>
