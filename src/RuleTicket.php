@@ -665,10 +665,16 @@ class RuleTicket extends Rule
         $criterias['_users_id_observer']['linkfield']         = '_users_id_observer';
         $criterias['_users_id_observer']['type']              = 'dropdown_users';
 
+        // эта строчка указывает что данные для _groups_id_observer будут браться из таблицы в базе данных glpi_groups
         $criterias['_groups_id_observer']['table']            = 'glpi_groups';
+        // completename это поле в таблице glpi_groups, котороео содержит полное имя группы
         $criterias['_groups_id_observer']['field']            = 'completename';
+        // это отображаемое имя в интерфейсе glpi  вызывает функцию локалищации(перевода) которая выбирает правильную форму слова в зависимости от числа:
+        // Watcher group для единственного числа, Watcher groups для множественного числа; число 1 показывает что нужно выбрать 1 вариант 
         $criterias['_groups_id_observer']['name']             = _n('Watcher group', 'Watcher groups', 1);
+        // указывает с каким полем действия этот критерий связан. то есть критерий проверяет значение поля _groups_id_observer
         $criterias['_groups_id_observer']['linkfield']        = '_groups_id_observer';
+        // тип интерфейса выпадающий список
         $criterias['_groups_id_observer']['type']             = 'dropdown';
 
         $criterias['requesttypes_id']['table']                = 'glpi_requesttypes';
@@ -869,10 +875,15 @@ class RuleTicket extends Rule
 
         $actions['_groups_id_observer']['table']              = 'glpi_groups';
         $actions['_groups_id_observer']['name']               = _n('Watcher group', 'Watcher groups', 1);
+        // показывает тип: а точнее указывает что интерфейс будет использовать выпадающий список для выбора группы
         $actions['_groups_id_observer']['type']               = 'dropdown';
+        // фильтр который ограничивает выборку из таблицы glpi_groups: если поле is_watcher=1 то можно будет выбрать группу
         $actions['_groups_id_observer']['condition']          = ['is_watcher' => 1];
+        // список действий которые можно выполнить с этим полем тут показывается что можно назначить группу и заменить
         $actions['_groups_id_observer']['force_actions']      = ['assign', 'append'];
+        // permitseveral указывает к каким действиям можно применить множественный выбор, значить что при действии append можно выбрать несколько групп
         $actions['_groups_id_observer']['permitseveral']      = ['append'];
+        // appendto указывает в какое поле будут добавляться дополнительные значения _additional_groups_observers внутреннее имя поля в которое будут записываться дополнительные группы наблюдателей
         $actions['_groups_id_observer']['appendto']           = '_additional_groups_observers';
 
         $actions['urgency']['name']                           = __('Urgency');
