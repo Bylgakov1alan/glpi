@@ -57,3 +57,21 @@ function plugin_init_deletewatchergroup() {
     $PLUGIN_HOOKS['install']['deletewatchergroup'] = 'plugin_deletewatchergroup_install';
     $PLUGIN_HOOKS['uninstall']['deletewatchergroup'] = 'plugin_deletewatchergroup_uninstall';
 }
+
+/**
+ * Функция установки плагина
+ */
+function plugin_deletewatchergroup_install() {
+    // Здесь будет код создания таблиц, прав и т.д.
+    // Но сейчас ничего не делаем
+    return true;
+}
+
+/**
+ * Функция удаления плагина
+ */
+function plugin_deletewatchergroup_uninstall() {
+    // Здесь будет код удаления таблиц, прав и т.д.
+    // Но сейчас ничего не делаем
+    return true;
+}
