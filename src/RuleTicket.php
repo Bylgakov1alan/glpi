@@ -328,7 +328,6 @@ class RuleTicket extends Rule
                             }
                         }
                         break;
-
                     case 'fromuser':
                         if (
                             ($action->fields['field'] == 'locations_id')
