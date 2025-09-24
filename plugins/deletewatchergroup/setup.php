@@ -54,6 +54,12 @@ function plugin_deletewatchergroup_check_config() {
 function plugin_init_deletewatchergroup() {
     global $PLUGIN_HOOKS;
 
+    // Подключаем файлы с функциями (inc/ директория)
+    include_once(GLPI_ROOT . '/plugins/deletewatchergroup/inc/log.php');  // Лог-функция
+    include_once(GLPI_ROOT . '/plugins/deletewatchergroup/inc/ticket.php');  // Функции для Ticket
+    include_once(GLPI_ROOT . '/plugins/deletewatchergroup/inc/ruleticket.php');  // Функции для RuleTicket
+    include_once(GLPI_ROOT . '/plugins/deletewatchergroup/inc/userrules.php');  // Функции для use_rules
+
     // CSRF защита
     $PLUGIN_HOOKS['csrf_compliant']['deletewatchergroup'] = true;
 
@@ -66,6 +72,15 @@ function plugin_init_deletewatchergroup() {
     $PLUGIN_HOOKS['pre_item_update']['deletewatchergroup'] = ['Ticket' => 'plugin_deletewatchergroup_pre_item_update'];
     $PLUGIN_HOOKS['item_add']['deletewatchergroup'] = ['Ticket' => 'plugin_deletewatchergroup_item_add'];
     $PLUGIN_HOOKS['item_update']['deletewatchergroup'] = ['Ticket' => 'plugin_deletewatchergroup_item_update'];
+
+// Хуки для RuleTicket (для работы с бизнес-правилами)
+    $PLUGIN_HOOKS['pre_item_add']['deletewatchergroup'] = ['RuleTicket' => 'plugin_deletewatchergroup_pre_item_add_ruleticket'];
+    $PLUGIN_HOOKS['pre_item_update']['deletewatchergroup'] = ['RuleTicket' => 'plugin_deletewatchergroup_pre_item_update_ruleticket'];
+    $PLUGIN_HOOKS['item_add']['deletewatchergroup'] = ['RuleTicket' => 'plugin_deletewatchergroup_item_add_ruleticket'];
+    $PLUGIN_HOOKS['item_update']['deletewatchergroup'] = ['RuleTicket' => 'plugin_deletewatchergroup_item_update_ruleticket'];
+
+// Хуки для use_rules которые будут вызывать функции plugin_deletewatchergroup_getRuleActions($args) и plugin_deletewatchergroup_getRuleCriteria($args)
+    $PLUGIN_HOOKS['use_rules']['deletewatchergroup'] = ['RuleTicket'];
 }
 
 /**
@@ -84,85 +99,3 @@ function plugin_deletewatchergroup_uninstall() {
     return true;
 }
 
-/**
- * Функция для логирования в кастомный файл
- */
-function plugin_deletewatchergroup_log($message) {
-    $logFile = GLPI_ROOT . '/files/_log/deletewatchergroup.log'; // Путь /var/www/html/glpi/files/_log/deletewatchergroup.log (если GLPI_ROOT = /var/www/html/glpi)
-    $timestamp = date('Y-m-d H:i:s');
-    file_put_contents($logFile, "[$timestamp] $message\n", FILE_APPEND);
-}
-
-/**
- * Добавление кастомного действия в бизнес-правила (для RuleTicket) - только для теста хука, без реальной логики
- */
-function plugin_deletewatchergroup_add_rule_actions(&$actions) {
-    plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_add_rule_actions вызвана. Текущие actions: " . print_r($actions, true));
-
-    // Здесь можно добавить действие, если нужно для теста, но по твоему запросу убрал
-    // $actions['_remove_groups_id_observer'] = [...];
-
-    plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_add_rule_actions завершена.");
-}
-
-/**
- * Хук pre_item_add для Ticket: вызывается перед добавлением тикета
- */
-function plugin_deletewatchergroup_pre_item_add($item) {
-    if (!($item instanceof Ticket)) {
-        return;
-    }
-
-    plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_pre_item_add вызвана для Ticket ID: " . ($item->getID() ?? 'new') . 
-                                  ". Входные данные (input): " . print_r($item->input, true) . 
-                                  ". Текущие поля (fields): " . print_r($item->fields, true));
-
-    // Нет обработки, только лог
-}
-
-/**
- * Хук pre_item_update для Ticket: вызывается перед обновлением тикета
- */
-function plugin_deletewatchergroup_pre_item_update($item) {
-    if (!($item instanceof Ticket)) {
-        return;
-    }
-
-    plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_pre_item_update вызвана для Ticket ID: " . $item->getID() . 
-                                  ". Входные данные (input): " . print_r($item->input, true) . 
-                                  ". Текущие поля (fields): " . print_r($item->fields, true) . 
-                                  ". Изменения (updates): " . print_r($item->updates ?? [], true) . 
-                                  ". Старые значения (oldvalues): " . print_r($item->oldvalues ?? [], true));
-
-    // Нет обработки, только лог
-}
-
-/**
- * Хук item_add для Ticket: вызывается после успешного добавления тикета
- */
-function plugin_deletewatchergroup_item_add($item) {
-    if (!($item instanceof Ticket)) {
-        return;
-    }
-
-    plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_item_add вызвана для Ticket ID: " . $item->getID() . 
-                                  ". Текущие поля (fields): " . print_r($item->fields, true));
-
-    // Нет обработки, только лог
-}
-
-/**
- * Хук item_update для Ticket: вызывается после успешного обновления тикета
- */
-function plugin_deletewatchergroup_item_update($item) {
-    if (!($item instanceof Ticket)) {
-        return;
-    }
-
-    plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_item_update вызвана для Ticket ID: " . $item->getID() . 
-                                  ". Текущие поля (fields): " . print_r($item->fields, true) . 
-                                  ". Изменения (updates): " . print_r($item->updates ?? [], true) . 
-                                  ". Старые значения (oldvalues): " . print_r($item->oldvalues ?? [], true));
-
-    // Нет обработки, только лог
-}
