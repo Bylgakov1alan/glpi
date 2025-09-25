@@ -872,6 +872,8 @@ class RuleTicket extends Rule
         $actions['_users_id_observer']['appendtoarray']       = ['use_notification' => 1];
         $actions['_users_id_observer']['appendtoarrayfield']  = 'users_id';
 
+        
+        
         $actions['_groups_id_observer']['table']              = 'glpi_groups';
         $actions['_groups_id_observer']['name']               = _n('Watcher group', 'Watcher groups', 1);
         // показывает тип: а точнее указывает что интерфейс будет использовать выпадающий список для выбора группы
@@ -884,6 +886,8 @@ class RuleTicket extends Rule
         $actions['_groups_id_observer']['permitseveral']      = ['append'];
         // appendto указывает в какое поле будут добавляться дополнительные значения _additional_groups_observers внутреннее имя поля в которое будут записываться дополнительные группы наблюдателей
         $actions['_groups_id_observer']['appendto']           = '_additional_groups_observers';
+
+
 
         $actions['urgency']['name']                           = __('Urgency');
         $actions['urgency']['type']                           = 'dropdown_urgency';

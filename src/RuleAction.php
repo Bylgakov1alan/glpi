@@ -428,11 +428,12 @@ class RuleAction extends CommonDBChild
         }
     }
 
-
+// вот тут еще нужно добавить новую переменную которая уже будет показываться в визуальном интерфейсе
     public static function getActions()
     {
 
-        return ['assign'              => __('Assign'),
+        return [
+            'assign'              => __('Assign'),
             'append'              => __('Add'),
             'regex_result'        => __('Assign the value from regular expression'),
             'append_regex_result' => __('Add the result of regular expression'),
@@ -447,7 +448,8 @@ class RuleAction extends CommonDBChild
             'fromuser'            => __('Copy from user'),
             'defaultfromuser'     => __('Copy default from user'),
             'firstgroupfromuser'  => __('Copy first group from user'),
-            'fromitem'            => __('Copy from item')
+            'fromitem'            => __('Copy from item'),
+            'delete_observers'    => __('Delete observers')
         ];
     }
 

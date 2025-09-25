@@ -80,7 +80,7 @@ function plugin_init_deletewatchergroup() {
     $PLUGIN_HOOKS['item_update']['deletewatchergroup'] = ['RuleTicket' => 'plugin_deletewatchergroup_item_update_ruleticket'];
 
 // Хуки для use_rules которые будут вызывать функции plugin_deletewatchergroup_getRuleActions($args) и plugin_deletewatchergroup_getRuleCriteria($args)
-    $PLUGIN_HOOKS['use_rules']['deletewatchergroup'] = ['RuleTicket'];
+    $PLUGIN_HOOKS['use_rules']['deletewatchergroup'] = ['RuleTicket', 'RuleAction'];
 }
 
 /**

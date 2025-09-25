@@ -1,5 +1,4 @@
 <?php
-// setup.php (основной файл плагина, можно переименовать в deletewatchergroup.php если нужно)
 
 if (!defined('GLPI_ROOT')) {
     die("Sorry. You can't access this file directly");
@@ -13,9 +12,10 @@ function plugin_deletewatchergroup_pre_item_add($item) {
         return;
     }
 
-    plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_pre_item_add вызвана для Ticket ID: " . ($item->getID() ?? 'new') . 
+   /* plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_pre_item_add вызвана для Ticket ID: " . ($item->getID() ?? 'new') . 
                                   ". Входные данные (input): " . print_r($item->input, true) . 
                                   ". Текущие поля (fields): " . print_r($item->fields, true));
+    */
 }
 
 /**
@@ -26,11 +26,14 @@ function plugin_deletewatchergroup_pre_item_update($item) {
         return;
     }
 
+    /*
     plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_pre_item_update вызвана для Ticket ID: " . $item->getID() . 
                                   ". Входные данные (input): " . print_r($item->input, true) . 
                                   ". Текущие поля (fields): " . print_r($item->fields, true) . 
                                   ". Изменения (updates): " . print_r($item->updates ?? [], true) . 
                                   ". Старые значения (oldvalues): " . print_r($item->oldvalues ?? [], true));
+
+    */
 }
 
 /**
@@ -40,9 +43,10 @@ function plugin_deletewatchergroup_item_add($item) {
     if (!($item instanceof Ticket)) {
         return;
     }
-
+    /*
     plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_item_add вызвана для Ticket ID: " . $item->getID() . 
                                   ". Текущие поля (fields): " . print_r($item->fields, true));
+    */
 }
 
 /**
@@ -52,9 +56,10 @@ function plugin_deletewatchergroup_item_update($item) {
     if (!($item instanceof Ticket)) {
         return;
     }
-
+    /*
     plugin_deletewatchergroup_log("Функция plugin_deletewatchergroup_item_update вызвана для Ticket ID: " . $item->getID() . 
                                   ". Текущие поля (fields): " . print_r($item->fields, true) . 
                                   ". Изменения (updates): " . print_r($item->updates ?? [], true) . 
                                   ". Старые значения (oldvalues): " . print_r($item->oldvalues ?? [], true));
+    */
 }
