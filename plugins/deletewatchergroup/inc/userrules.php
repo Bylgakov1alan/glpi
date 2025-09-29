@@ -12,7 +12,7 @@ function plugin_deletewatchergroup_getRuleActions($args) {
     plugin_deletewatchergroup_log("Функция getRuleActions вызвана");
     if ($args['rule_itemtype'] !== 'RuleTicket') return [];
     $base_actions = $args['values'];
-    plugin_deletewatchergroup_log("getRuleActions: базовые values: " . print_r($base_actions, true));
+    //plugin_deletewatchergroup_log("getRuleActions: базовые values: " . print_r($base_actions, true));
 
     // Добавляем 'delete_observers' в force_actions (типы действий для поля)
     if (isset($base_actions['_groups_id_observer'])) {
@@ -29,12 +29,12 @@ function plugin_deletewatchergroup_getRuleActions($args) {
         }
     }
 
-    plugin_deletewatchergroup_log("getRuleActions: после добавления: " . print_r($base_actions, true));
+    //plugin_deletewatchergroup_log("getRuleActions: после добавления: " . print_r($base_actions, true));
 
     return $base_actions;
 }
 
-/**
+/**roups_id_observers
  * Функция для критериев (вызывается GLPI через use_rules для getAllCriteria)
  */
 function plugin_deletewatchergroup_getRuleCriteria($args) {

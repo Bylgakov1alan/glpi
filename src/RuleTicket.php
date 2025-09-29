@@ -525,6 +525,9 @@ class RuleTicket extends Rule
                             }
                         }
                         break;
+                    default:
+                        Toolbox::logInFile('php-errors', "Default case hit for unknown action_type: {$action->fields['action_type']}. Calling parent::executeActions.\n");
+                        return parent::executeActions($output, $params, $input);
                 }
             }
         }
@@ -872,7 +875,7 @@ class RuleTicket extends Rule
         $actions['_users_id_observer']['appendtoarray']       = ['use_notification' => 1];
         $actions['_users_id_observer']['appendtoarrayfield']  = 'users_id';
 
-        
+
         
         $actions['_groups_id_observer']['table']              = 'glpi_groups';
         $actions['_groups_id_observer']['name']               = _n('Watcher group', 'Watcher groups', 1);

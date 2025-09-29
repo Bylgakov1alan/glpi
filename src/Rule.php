@@ -1887,12 +1887,19 @@ class Rule extends CommonDBTM
         if (isset($PLUGIN_HOOKS['use_rules'])) {
             $params['criterias_results'] = $this->criterias_results;
             $params['rule_itemtype']     = $this->getType();
+
+            $itemtype = get_class($this) ?? 'RuleTicket';  // Фикс undefined
+            Toolbox::logInFile('php-errors', "executePluginsActions called for itemtype: $itemtype. ...\n");
+            
             foreach ($PLUGIN_HOOKS['use_rules'] as $plugin => $val) {
                 if (!Plugin::isPluginActive($plugin)) {
                     continue;
                 }
+                Toolbox::logInFile('php-errors', "executePluginsActions called for itemtype: {$itemtype}. Plugins registered for use_rules: " . print_r($PLUGIN_HOOKS['use_rules'] ?? [], true) . "\n");
                 if (is_array($val) && in_array($this->getType(), $val)) {
-                    $results = Plugin::doOneHook($plugin, "executeActions", ['output' => $output,
+
+                    $results = Plugin::doOneHook($plugin, "executeActions", [
+                        'output' => $output,
                         'params' => $params,
                         'action' => $action,
                         'input'  => $input
@@ -1905,6 +1912,7 @@ class Rule extends CommonDBTM
                 }
             }
         }
+        Toolbox::logInFile('php-errors', "Called plugin_{$plugin}_executeActions. Returned output: " . print_r($output, true) . "\n");
         return $output;
     }
 
@@ -1973,6 +1981,7 @@ class Rule extends CommonDBTM
                         //plugins actions
                         $executeaction = clone $this;
                         $output = $executeaction->executePluginsActions($action, $output, $params, $input);
+                        Toolbox::logInFile('php-errors', "Default case hit for unknown action_type: {$action->fields['action_type']}. Calling parent::executeActions.\n");
                         break;
                 }
             }
@@ -3043,7 +3052,7 @@ class Rule extends CommonDBTM
             $itemtype = static::getType();
         }
 
-       //Agregate all plugins criteria for this rules engine
+        //Agregate all plugins criteria for this rules engine
         $toreturn = $params;
         if (isset($PLUGIN_HOOKS['use_rules'])) {
             foreach ($PLUGIN_HOOKS['use_rules'] as $plugin => $val) {

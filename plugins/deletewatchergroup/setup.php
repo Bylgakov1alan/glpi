@@ -59,6 +59,7 @@ function plugin_init_deletewatchergroup() {
     include_once(GLPI_ROOT . '/plugins/deletewatchergroup/inc/ticket.php');  // Функции для Ticket
     include_once(GLPI_ROOT . '/plugins/deletewatchergroup/inc/ruleticket.php');  // Функции для RuleTicket
     include_once(GLPI_ROOT . '/plugins/deletewatchergroup/inc/userrules.php');  // Функции для use_rules
+    include_once(GLPI_ROOT . '/plugins/deletewatchergroup/hooks.php');
 
     // CSRF защита
     $PLUGIN_HOOKS['csrf_compliant']['deletewatchergroup'] = true;
@@ -80,7 +81,7 @@ function plugin_init_deletewatchergroup() {
     $PLUGIN_HOOKS['item_update']['deletewatchergroup'] = ['RuleTicket' => 'plugin_deletewatchergroup_item_update_ruleticket'];
 
 // Хуки для use_rules которые будут вызывать функции plugin_deletewatchergroup_getRuleActions($args) и plugin_deletewatchergroup_getRuleCriteria($args)
-    $PLUGIN_HOOKS['use_rules']['deletewatchergroup'] = ['RuleTicket', 'RuleAction'];
+    $PLUGIN_HOOKS['use_rules']['deletewatchergroup'] = ['RuleTicket'];
 }
 
 /**
