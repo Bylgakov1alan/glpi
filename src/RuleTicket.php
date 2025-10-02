@@ -527,7 +527,9 @@ class RuleTicket extends Rule
                         break;
                     default:
                         Toolbox::logInFile('php-errors', "Default case hit for unknown action_type: {$action->fields['action_type']}. Calling parent::executeActions.\n");
-                        return parent::executeActions($output, $params, $input);
+                        $executeaction = clone $this;
+                        $output = $executeaction->executePluginsActions($action, $output, $params, $input);
+                        break;
                 }
             }
         }
