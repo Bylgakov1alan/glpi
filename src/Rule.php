@@ -1889,13 +1889,12 @@ class Rule extends CommonDBTM
             $params['rule_itemtype']     = $this->getType();
 
             $itemtype = get_class($this) ?? 'RuleTicket';  // Фикс undefined
-            Toolbox::logInFile('php-errors', "executePluginsActions called for itemtype: $itemtype. ...\n");
             
             foreach ($PLUGIN_HOOKS['use_rules'] as $plugin => $val) {
                 if (!Plugin::isPluginActive($plugin)) {
                     continue;
                 }
-                Toolbox::logInFile('php-errors', "executePluginsActions called for itemtype: {$itemtype}. Plugins registered for use_rules: " . print_r($PLUGIN_HOOKS['use_rules'] ?? [], true) . "\n");
+                
                 if (is_array($val) && in_array($this->getType(), $val)) {
 
                     $results = Plugin::doOneHook($plugin, "executeActions", [
@@ -1912,7 +1911,6 @@ class Rule extends CommonDBTM
                 }
             }
         }
-        Toolbox::logInFile('php-errors', "Called plugin_{$plugin}_executeActions. Returned output: " . print_r($output, true) . "\n");
         return $output;
     }
 

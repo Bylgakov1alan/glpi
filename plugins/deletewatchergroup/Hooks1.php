@@ -40,7 +40,7 @@ function plugin_deletewatchergroup_executeActions($data) {
 
         plugin_deletewatchergroup_log("переменная value = $value");
 
-        if (!isset($input['id']) || $input['id'] <= 0) {
+        if (!isset($input['id']) || $input['id' <= 0]) {
             return $output;
         }
 
@@ -53,20 +53,16 @@ function plugin_deletewatchergroup_executeActions($data) {
         }
 
 
-        plugin_deletewatchergroup_log("вывод лога после того как обьект тикета загрузили из БД" 
-                                        . print_r($ticket, true));
+        plugin_deletewatchergroup_log("вывод лога после того как обьект тикета загрузили из БД" . print_r($ticket, true));
 
 
         // Получаем текущие группы наблюдателей из таблицы glpi_groups_tickets
 
         if (isset($output["_groups_id_observer_deleted"])) {
-            foreach ( $output["_groups_id_observer_deleted"] as $key=>$array)
+            foreach ( $output["_groups_id_observer_deleted"] as $key=>$arr)
             {
-                plugin_deletewatchergroup_log("Элемент с ключом $key: " . print_r($arr, true));
+                plugin_deletewatchergroup_log("вывод массива key: $key \n" . "вывод массива arr: $arr" );
             }
-
-            plugin_deletewatchergroup_log("вывожу массив _groups_id_observer_deleted по ключам" 
-                                            . $output["_groups_id_observer_deleted"][$key]);
         }
 
             // plugin_deletewatchergroup_log("Group $value not found in observer groups.");

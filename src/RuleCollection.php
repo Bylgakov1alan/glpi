@@ -1631,8 +1631,6 @@ JAVASCRIPT;
         $p['condition']     = 0;
         $p['only_criteria'] = null;
 
-        Toolbox::logInFile('php-errors', "processAllRules called for itemtype: " . get_class($this) . ", input: " . print_r($input, true) . "\n");
-
         if (is_array($options) && count($options)) {
             foreach ($options as $key => $val) {
                 $p[$key] = $val;
