@@ -1,5 +1,5 @@
 <?php
-// front/index.php
+// index.php
 
 // Проверяем, что мы в GLPI
 if (!defined('GLPI_ROOT')) {

@@ -1,5 +1,5 @@
 <?php
-// setup.php (основной файл плагина, можно переименовать в deletewatchergroup.php если нужно)
+// log.php
 
 if (!defined('GLPI_ROOT')) {
     die("Sorry. You can't access this file directly");
