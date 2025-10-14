@@ -25,18 +25,17 @@ function plugin_deletewatchergroup_executeActions($data) {
         return $output;
     }
 
-    plugin_deletewatchergroup_log(
-        "просмотр всех данных которые есть в переменной output: " . print_r($output, true) 
-        . "просмотр всех данных которые есть в переменной action: " . print_r($action, true) 
-        . "просмотр всех данных которые есть в переменной input: " . print_r($input, true) 
-        . "просмотр всех данных которые есть в переменной params: " . print_r($params, true) 
-    );
+    // plugin_deletewatchergroup_log(
+    //     "просмотр всех данных которые есть в переменной output: " . print_r($output, true) 
+    //     . "просмотр всех данных которые есть в переменной action: " . print_r($action, true) 
+    //     . "просмотр всех данных которые есть в переменной input: " . print_r($input, true) 
+    //     . "просмотр всех данных которые есть в переменной params: " . print_r($params, true) 
+    // );
 
     if ($action->fields['action_type'] === 'delete_observers' 
         && $action->fields['field'] === '_groups_id_observer'){
 
-        plugin_deletewatchergroup_log(  "прошло условие что action_type = delete_observers 
-                                         и field = _groups_id_observer" );
+        plugin_deletewatchergroup_log(  "прошло условие что action_type = delete_observers и field = _groups_id_observer" );
 
         $value=(int)$action->fields["value"];
 
@@ -87,7 +86,7 @@ function plugin_deletewatchergroup_executeActions($data) {
                 $idGroupTicket = 0;
 
                 // не терять! где я проверяю существует ли тикет (обновление или создание нового)
-                if (isset($input['id']) || $input['id'] > 0) {
+                if (isset($input['id']) && (int)$input['id'] > 0) {
 
                     plugin_deletewatchergroup_log   ("айдишник тикета и его тип: " . (int)$input['id'] . "тип: " . gettype((int)$input['id'])
                                                     . "айдишник группы: "  . $value . "тип: " . gettype($value));
@@ -110,12 +109,8 @@ function plugin_deletewatchergroup_executeActions($data) {
 
                     plugin_deletewatchergroup_log(  "запрос к бд выдал такой результат: " . var_export($rowTicket, true));
                     $idGroupTicket = $rowTicket['id'];
-                }
-                else {
 
-                }
-
-                $entry = [
+                    $entry = [
                         'id' => $idGroupTicket,
                         'items_id' => $value,
                         'itemtype' => 'Group',
@@ -123,13 +118,27 @@ function plugin_deletewatchergroup_executeActions($data) {
                         'title' => $rowGroup['completename'] ?? $rowGroup['name']
                         ];
 
-                plugin_deletewatchergroup_log("нужно добавить пометку в массив на удаление группы" . print_r($entry, true));
+                    plugin_deletewatchergroup_log("нужно добавить пометку в массив на удаление группы" . print_r($entry, true));
 
-                $output["_groups_id_observer_deleted"][] = $entry;
+                    $output["_groups_id_observer_deleted"][] = $entry;
 
 
-                plugin_deletewatchergroup_log("вот и переменная которая выходит в конце" . print_r($output, true));
-                return $output;
+                    plugin_deletewatchergroup_log("вот и переменная которая выходит в конце" . print_r($output, true));
+                    return $output;
+
+                } else {
+
+                    if (isset($output["_groups_id_observer"])) {
+
+                        unset($output["_groups_id_observer"]["_actors_" . $value]);
+
+                        plugin_deletewatchergroup_log("новый тикет поэтому я удаляю группу наблюдателей из массива" . $output["_groups_id_observer"]["_actors_" . $value]
+                                                    . "нужно будет еще проверять логику на всякий случай вдруг этой группы нет, хотя бизнес правила изначально проверяют что группа должна быть");
+                    }
+
+                }
+
+                
             }
         }
         
